@@ -1,0 +1,93 @@
+{% include 'adminheader.html'%}
+
+<style type="text/css">
+	
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    color: white
+}
+
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #030303;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+</style>
+
+<br><br><br><br><br><br>
+            
+<center>
+    <h2 style="color: white">Verify Delivery Boy</h2>
+
+    <table class="styled-table">
+    <thead>
+        <tr>
+           <th>sino</th>
+                <th>Company Name</th>
+             
+                <th>Place</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>location</th>
+                <th></th>
+        </tr>
+    </thead>
+    <tbody>
+       {% for row in data['sparepartsview']%}
+        <tr>
+            <td>{{loop.index}}</td>
+            <td>{{row['firstname']}} {{row['lastname'] }}</td>
+          
+          <td>{{row['place'] }}</td>
+            <td>{{row['phone'] }}</td>
+              <td>{{row['email'] }}</td>
+              <td><a class="btn btn-primary" href="http://www.google.com/maps?q= {{row['latitude']}} ,{{row['longitude']}}">Click Me</a></td>
+              <td><img src="/{{row['image']}}" width="100" height="100"></td>
+
+              <td><a class="btn btn-success" href="admin_viewproduct?sid={{row['sparepart_id']}}">View product</a></td>
+        {% if row['usertype']=="Pending"%}
+            
+            <td><a class="btn btn-success" href="?action=accept&lid={{row['login_id']}}">Accept</a></td>
+          <td><a class="btn btn-success" href="?action=reject&lid={{row['login_id']}}">Reject</a></td>
+          {% endif %}
+        </tr>
+        {% endfor %}
+
+    </tbody>
+</table>
+
+
+</center>
+{% include 'footer.html'%}

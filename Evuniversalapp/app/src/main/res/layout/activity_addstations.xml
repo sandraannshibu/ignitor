@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bike"
+    android:orientation="vertical"
+    tools:context=".addstations">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Predict Station"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="104dp" />
+
+    <EditText
+        android:id="@+id/latitude"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="latitude"
+        android:inputType="textPersonName"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <EditText
+        android:id="@+id/longitude"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="longitude"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="239dp" />
+
+    <EditText
+        android:id="@+id/noofvehicle"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="No of vehicle"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <EditText
+        android:id="@+id/noofstations"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="No of stations"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+
+
+    <Button
+        android:id="@+id/dbregistration"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Add"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="549dp" />
+
+
+
+    <EditText
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="output"
+
+        android:focusableInTouchMode="false"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+</LinearLayout>

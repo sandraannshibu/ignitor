@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bike"
+    android:orientation="vertical"
+    tools:context=".Deliverymanageprofile">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="30dp"
+        android:layout_height="550dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="560dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#864CAF"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="80dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="My Profile"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/fname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="6dp"
+                android:editable="false"
+
+                android:ems="10"
+                android:hint="Firstname"
+
+                android:inputType="textPersonName"
+                android:padding="6dp"
+
+                android:textColor="#1B1A1A"
+                android:textColorHint="#0E0D0D" />
+
+
+            <EditText
+                android:id="@+id/lname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+
+                android:drawablePadding="10dp"
+                android:ems="10"
+
+                android:hint="lastname"
+                android:inputType="textPersonName"
+
+                android:padding="10dp"
+                android:textColor="#0B0909"
+
+                android:textColorHint="#121010" />
+
+            <EditText
+                android:id="@+id/place"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+
+                android:drawablePadding="10dp"
+                android:ems="10"
+
+                android:hint="place"
+                android:inputType="textPersonName"
+
+                android:padding="10dp"
+                android:textColor="#221F1F"
+
+                android:textColorHint="#0C0B0B" />
+            <!--            <EditText-->
+            <!--                android:id="@+id/place"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:layout_marginRight="20dp"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:ems="10"-->
+
+            <!--                android:padding="10dp"-->
+            <!--                android:drawablePadding="10dp"-->
+
+            <!--                android:inputType="textPersonName"-->
+            <!--                android:textColorHint="#0B0A0A"-->
+
+            <!--                android:textColor="#120E0E"-->
+            <!--                android:layout_marginTop="10dp"-->
+
+            <!--                android:hint="Address" />-->
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+
+                android:drawablePadding="10dp"
+                android:ems="10"
+
+                android:hint="phone"
+                android:inputType="number"
+
+                android:padding="10dp"
+                android:textColor="#100F0F"
+
+                android:textColorHint="#100F0F" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+
+                android:drawablePadding="10dp"
+                android:ems="10"
+
+                android:hint="email"
+                android:inputType="textEmailAddress"
+
+                android:padding="10dp"
+                android:textColor="#0C0C0C"
+
+                android:textColorHint="#151414" />
+            <!--            <EditText-->
+            <!--                android:id="@+id/year"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:layout_marginRight="20dp"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:ems="10"-->
+
+            <!--                android:padding="10dp"-->
+            <!--                android:drawablePadding="10dp"-->
+
+            <!--                android:inputType="textPersonName"-->
+            <!--                android:textColorHint="#0E0D0D"-->
+
+            <!--                android:textColor="#151414"-->
+            <!--                android:layout_marginTop="10dp"-->
+
+            <!--                android:hint="Year" />-->
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+
+                android:backgroundTint="#7E1DB3"
+
+                android:text="Update"
+                android:textColor="#FAF7F7"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

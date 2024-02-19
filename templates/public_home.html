@@ -1,0 +1,53 @@
+{% include 'publicheader.html'%}
+
+
+				
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="w3layouts-banner">
+				<div class="container">
+					<section class="slider">
+						<div class="flexslider">
+							<ul class="slides">
+								<li>
+									<div class="agileits_w3layouts_banner_info">
+										<h3>We are committed to the highest quality</h3>
+										<p>Avail the best services for the best price,we don't compromise in quality</p>
+									</div>
+								</li>
+								<li>
+									<div class="agileits_w3layouts_banner_info">
+										<h3>All services at your fingertips</h3>
+										<p>We are providing a complete suit for your EV,as we say we won't compromise in quality. </p>
+									</div>
+								</li>
+								<li>
+									<div class="agileits_w3layouts_banner_info">
+										<h3>Know what others are thinking of EV</h3>
+										<p>Be a part of our EV community and share your thoughts and get to know what others are thinking</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+				</section>
+			<!-- flexSlider -->
+				<script defer src="/static/js/jquery.flexslider.js"></script>
+				<script type="text/javascript">
+					$(window).load(function(){
+					  $('.flexslider').flexslider({
+						animation: "slide",
+						start: function(slider){
+						  $('body').removeClass('loading');
+						}
+					  });
+					});
+				</script>
+			<!-- //flexSlider -->
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- //banner -->
+
+{% include 'footer.html'%}

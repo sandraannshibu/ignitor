@@ -1,0 +1,23 @@
+
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+  <ul class="flashes">
+      {% for message in messages %}
+      <script type="text/javascript">alert("{{message}}")</script>
+      {% endfor %}
+  </ul>
+  {% endif %}
+  {% endwith %}
+  
+	<script src="/static/js/jarallax.js"></script>
+	<script src="/static/js/SmoothScroll.min.js"></script>
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+</body>	
+</html>

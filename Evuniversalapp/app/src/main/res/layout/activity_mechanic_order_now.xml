@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bike"
+    android:orientation="vertical"
+    tools:context=".mechanicOrderNow">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Now"
+        android:textColor="#121010"
+
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+
+
+    <EditText
+        android:id="@+id/Amonut"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+
+        android:textStyle="bold"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:hint="Amount"
+        android:inputType="textPersonName"
+        android:textColor="#151111"
+
+        android:textColorHint="#120E0E"
+         />
+
+    <EditText
+        android:id="@+id/hours"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+
+
+
+        android:gravity="center"
+        android:hint="How Much Do You Need?"
+        android:inputType="textPersonName"
+        android:textColor="#070505"
+        android:textColorHint="#121111"
+
+        />
+
+
+    <EditText
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+
+        android:textStyle="bold"
+
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:hint="total"
+        android:inputType="textPersonName"
+        android:textColor="#0B0909"
+        android:textColorHint="#191515"
+         />
+
+    <Button
+        android:id="@+id/booknow"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Submit"
+        />
+
+</LinearLayout>
